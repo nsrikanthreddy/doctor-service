@@ -13,7 +13,7 @@ import jakarta.validation.constraints.Size;
 public class Doctor {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     @NotBlank(message = "Name is required")
     @Size(min = 5, max = 25, message = "Name must be between 5 and 25 characters")
